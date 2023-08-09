@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.fullcontainer {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.topcontainer {
+    background-image: url("IMG_3874.jpg");
+    background-size: 100% 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+}
+.nav{
+    height: 100px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+}
+.nav a{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-decoration: none;
+    -webkit-text-stroke: 1px black;
+    font-size: 40px;
+    margin: 10px;
+}
+.nav a:hover {
+    color: white;
+
+}
+.callnow {
+    border:2px solid black;
+    border-radius:25px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+.home {
+    
+    margin-left:10px;
+}
+.services {
+    margin-left:10px;
+}
+.gallery {
+
+    margin-left:10px;
+}
+.contact {
+
+    margin-left: 10px;
+}
+.menu {
+    height: 100%;
+    border: 1px solid black;
+    display:grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 10px;
+
+}
+.nailenhance{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid black;
+    grid-template-rows: 40px 20px  auto;
+}
+.nailenhance > div {
+    border: 1px solid black;
+
+}
+.manicure{
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 1px solid black;
+    grid-template-rows: 40px  auto 20px;
+}
+.manicure > div {
+    border: 1px solid black;
+}
+.wax{
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 1px solid black;
+    grid-template-rows: 40px  auto;
+}
+.wax > div {
+    border: 1px solid black;
+}
+.kids {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 1px solid black;
+    grid-template-rows: 40px 20px auto;
+}
+.kids > div {
+    border: 1px solid black;
+}
+.add-on {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 1px solid black;
+    grid-template-rows: 40px auto;
+}
+.add-on > div {
+    border: 1px solid black;
+}
+.pedicure {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 1px solid black;
+    grid-template-rows: 40px auto 20px auto 20px auto 20px;
+}
+.pedicure > div {
+    border: 1px solid black;
+}
+.spapedicure{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border: 1px solid black;
+    grid-template-rows: auto;
+    grid-column: 1 / 4;
+    text-align: left;
+}
+.spapedicure > div {
+    border: 1px solid black;
+}
+.description{
+    grid-column: 1 / 3;
+}
+.photo{
+    grid-row: 3 / 5;
+    grid-column: 3;
+}
+.photo img{
+    max-height: 100%;
+    width: 100%;
+}
+.title{
+    font-size: 30px;
+    text-align: left;
+    grid-column: 1 / 4;
+}
+.title1 {
+    grid-column: 1 / 4;
+    font-size: 30px;
+    text-align: center;
+}
+.title2{
+    grid-column: 1 / 3;
+    font-size: 30px;
+    text-align: center;
+}
+.warning{
+    grid-column: 1 / 3;
+}
+</style>
+</head>
+<body>
+<div class="fullcontainer">
+    <div class="topcontainer">
+        <div class="logo">
+            <img src="IMG_3876.jpg">
+        </div>
+        <div class="nav">
+            <div class="home">
+                <a href="Home.html">Home</a>
+            </div>
+            <div class="services">
+                <a href="Services.html">Services</a>
+            </div>
+            <div class="gallery">
+                <a href="Gallery.html">Gallery</a>
+            </div>
+            <div class="contact">
+                <a href="ContactUs.html">Contact Us</a>
+            </div>
+            <div class="callnow">
+                <a href="tel:8437963091">Call Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="nailenhance">
+            <div class="title1"><b>Nail Enhancement</b></div>
+            <div class="item2"></div>
+            <div class="item3">Full Set:</div>  
+            <div class="item4">Fill In:</div>
+            <div class="item5">
+                <p style="text-align:start; display:flex; flex-direction: column; align-items:center">
+                Acrylic:<br>Pink + White Acrylic:<br>UV Gel:<br>Overlay UV Gel:
+            </div>
+            <div class="item6">
+                <p style="text-align:start; display:flex; flex-direction: column; align-items:center">
+                $50<br>$65+<br>$70+<br>$55+</div>
+            <div class="item7">
+                <p style="text-align:start; display:flex; flex-direction: column; align-items:center">
+                $40+<br>$40/50+<br>$55+</div>
+                </p>
+        </div>
+        <div class="manicure">
+            <div class="title2"><b>Manicure</b></div>
+            <div class="item2">
+                <p style="text-align:start; display:flex; flex-direction: column; align-items:center">
+                Basic Manicure<br>Gel Manicure<br>Therapeutic Manicure<br>Deluxe Manicure<br>Dip Powder<br>Dip Powder w/ Tips:<br>Dip Ombre:
+                </p>
+            </div>
+            <div class="item3">
+                <p style="text-align:start; display:flex; flex-direction: column; align-items:center">
+                $25<br>$35<br>$35<br>$45+<br>$52<br>$62+<br>$70
+                </p>
+            </div>  
+            <div class="warning" style="text-align: center;">*prices may very depending on shape and length</div>
+        </div>
+        <div class="wax">
+            <div class="title2"><b>Waxing</b></div>
+            <div class="item1">
+                <p style="text-align:start; display:flex; flex-direction: column; align-items:center">
+                Eyebrows:<br>Lip:<br>Chin:<br>Face:<br>Neck:<br>Sideburn:<br>Underarms:<br>Full Arms:<br>Half Arms:<br>Bikini:<br>Half Legs:<br>Full Legs:
+                </p>
+            </div>
+            <div class="item2">
+                <p style="text-align:start; display:flex; flex-direction: column; align-items:center">
+                $12<br>$10<br>$10+<br>$40+<br>$10+<br>$15<br>$20+<br>$40+<br>$35+<br>$40+<br>$45+<br>$60+
+                </p>
+            </div>
+        </div>
+        <div class="kids">
+            <div class="title2"><b>Kids</b></div>
+            <div class="warning">(Up to 10 years old)</div>
+            <div class="item1">
+                Manicure & Pedicure:<br>Gel Mani/Gel Pedi:<br>Nails/Toes Polish:<br>Nails/Toes Gel Polish:
+            </div>
+            <div class="item2">
+                $15/$25<br>$25/$40<br>$10/$15<br>$20/$25
+            </div>
+        </div>
+        <div class="add-on">
+            <div class="title2"><b>Add-on Service</b></div>
+            <div class="item1">
+                French:<br>Matte Gel Top:<br>Nail Design:<br>Cuticle Cut:<br>Nail Repair:<br>Long Nail:<br>Nail Removal:<br>Callus Removal:<br>Paraffin:<br>Collagen Socks:<br>Reg. Polish Change Nails & Toes:<br>Gel Polish Change Nails & Toes:
+            </div>
+            <div class="item2">
+                $5<br>$3<br>$5+<br>$10<br>$5+<br>$5+<br>$15<br>$10<br>$10<br>$10<br>$15/$20<br>$25/$30
+            </div>
+        </div>
+        <div class="pedicure">
+            <div class="title2"><b>Pedicure</b></div>
+            <div class="item1">Basic Pedicure</div>
+            <div class="item2">$35</div>
+            <div class="warning">(Cut, Cuticle Cleaning, Scrub, Hot Towel, Polish)</div>
+            <div class="item3">Theraputic Pedicure</div>
+            <div class="item4">$45</div>
+            <div class="warning">(Basic Pedicure + Paraffin)</div>
+            <div class="item5">Thermal Pedicure</div>
+            <div class="item6">$53</div>
+            <div class="warning">(Inculudes Hot Stones + Paraffin)</div>
+            <div class="warning">*$20 Extra For Gel Polish On Any Pedicure</div>
+        </div>
+        <div class="spapedicure">
+            <div class="title">Spa Pedicure</div>
+            <div class="title">Cucumber Fresh $55</div>
+            <div class="description">
+                <i>Freshen your feet for a vibrant and healthy glow. Cucumber is great for  hydrating, and detoxifies skin, help  moisturize and tighten tired feet, leaving  it feeling moist and smooth.</i>
+            </div>
+            <div class="photo">
+                <img src="demi.jpg" height="100px">
+            </div>
+            <div class="description">
+                <b>Service Includes:</b><i> Sea Salt Soak, Callus Remover, Cucumber Scrubs, Hot Stones & Cream Massage, Warm Towel + Moisturizing Lotion</i>
+            </div>
+            <div class="title">Bursting Lemon Drop $50</div>
+            <div class="description">
+                <i>Give your skin the attention they deserve! Fresh lemons help to tone the skin and exfoliate dead skin cells, the hydroxyl acid in the lemon cleans, exfoliates, and softens your feet.</i>
+            </div>
+            <div class="description">
+                <b>Service Includes:</b><i> Sea Salt Soak, Callus Remover, Lemon Scrubs, Cream Massage, Warm Towel, and Moisturizing Lotion</i>
+            </div>
+            <div class="photo" style="grid-row: 6 / 8">
+                <img src="flower and rock.jpg" height="100px">
+            </div>
+            <div class="title">Chocolate Delight $55</div>
+            <div class="description">
+                <i>Chocolate? Really? Chocolate is packed full of antioxidants and essential vitamins, our golden cocoa butter, and French cocoa will create a series of chocolate pedicureproducts worthy of the world’s most luxurious spas</i>
+            </div>
+            <div class="description">
+                <b>Service Includes:</b><i> Sea Salt Soak, Callus Remover, Choco-late Scrubs, Cream Massage, Warm Towel, and Moisturizing Lotion + Hot Stones.</i>
+            </div>
+            <div class="photo" style="grid-row: 9 / 11">
+                <img src="demi.jpg" height="100px">
+            </div>
+            <div class="title">Deluxe Pedicure $70</div>
+            <div class="description">
+                <i>Give your skin the attention they deserve! Fresh lemons help to tone the skin and exfoliate dead skin cells, the hydroxyl acid in the lemon cleans, exfoliates, and softens your feet.</i>
+            </div>
+            <div class="description">
+                <b>Service Includes:</b><i> Sea Salt Soak, Callus Remover, Lemon Scrubs, Cream Massage, Warm Towel, and Moisturizing Lotion</i>
+            </div>
+            <div class="photo" style="grid-row: 12 / 14">
+                <img src="Leaf and rock.jpg" height="100px">
+            </div>
+            <div class="title">Luxury Pedicure $75</div>
+            <div class="description" style="grid-row: 15 / 17">
+                <i>Relax while soaking your feet in a warm rose-petal / dry tea leaves. The light aroma of rose will put you in a relaxing mood. Rose mud mask will help lift, firm and tone aging skin and paraffin wax to moisturize the heels and skin. Finish with hot stones,​​ warm towel, and collagen socks.</i>
+            </div>
+            
+            <div class="photo" style="grid-row: 15 / 17">
+                <img src="flower.jpg" height="100px">
+            </div>
+            <div class="title">JK Spa Pedicure $85</div>
+            <div class="description">
+                <i>Pain relief and really relax your mind with high quality lemongrass & ginger. Reduce your daily stress, soothe aches and muscle pain. Clean your dry and dead skin. Add minerals to your skin via premium mask and lotion. Hot stones foot massages and blood circulation.</i>
+            </div>
+            <div class="description">
+                <b>Service Includes:</b><i> Sea Salt Soak, Callus Remover, Lemongrass Extract Oil, Cream Massage, Warm Towel and Moisturizing Lotion, Hot Stones + Collagen Socks</i>
+            </div>
+            <div class="photo" style="grid-row: 18 / 20">
+                <img src="demi.jpg" height="100px">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
