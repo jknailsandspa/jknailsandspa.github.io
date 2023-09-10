@@ -9,7 +9,7 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
-.topcontainer {
+.background{
     background-image: url("IMG_3874.jpg");
     background-size: 100% 100%;
     height: 300px;
@@ -17,31 +17,39 @@
     flex-direction: row;
 }
 .logo{
-    height: 100px;
-    width: 100px;
-}
-.logo img{
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
+    background: white;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid black;
 }
 .nav{
-    height: 100px;
+    height: auto;
     flex-grow: 1;
+    background-color: #085094;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     display: flex;
-    justify-content: center;
-    align-items:end;
+    align-items: center;
+    z-index: 1;
 }
 .nav a{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Copperplate, Papyrus, fantasy;
     color: black;
     text-decoration: none;
     -webkit-text-stroke: 1px black;
-    font-size: 40px;
+    font-size: 3vw;
     margin: 10px;
 }
 .nav a:hover {
     color: white;
 
+}
+.nav a.active {
+    color: white;
 }
 .callnow {
     border:2px solid black;
@@ -49,67 +57,48 @@
     margin-left: auto;
     margin-right: 10px;
 }
-.home {
-    
-    margin-left:10px;
-}
-.services {
-    margin-left:10px;
-}
-.gallery {
-
-    margin-left:10px;
-}
-.contact {
-
-    margin-left: 10px;
-}
 .containermap {
-    height: 700px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    margin: 20px;
 }
 .map {
     height:300px;
-    padding: 5px;
-    border: 2px solid black;
+    padding: 10px 20px 20px 20px;
+    
 }
-.address {
-    height:400px;
+.title{
+    font-size: 70px;
+    font-family: Copperplate, Papyrus, fantasy;
+    padding: 20px 20px 0px 20px;
+    color: #085094;
+    border-bottom: 2px solid black;
+}
+.bottomcontainer {
+    background-color: #085094;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+.socialscontainer{
     display: flex;
     flex-direction: row;
-    border: 2px solid black;
 }
-.hour{
-    border: 2px solid black;
-    padding:10px;
-}
-.hour >b{
-    font-size: 20px;
-}
-.hour >span{
-    font-size: 15px;
-}
-.location{
-    border: 2px solid black;
-    padding:10px;
-    flex-grow: 1;
-    text-align: center;
-}
-.location a{
-    text-decoration: none;
-    color: black;
+.footer{
+    color: white;
 }
 </style>
 </head>
 <body>
 <div class="fullcontainer">
     <div class="topcontainer">
-        <div class="logo">
-            <img src="IMG_3876.jpg">
-        </div>
         <div class="nav">
+            <div class="logo">
+                <img src="IMG_3876.jpg" style="height: 100%">
+            </div>
             <div class="home">
                 <a href="index.html">Home</a>
             </div>
@@ -126,38 +115,31 @@
                 <a href="tel:8437963091">Call Now</a>
             </div>
         </div>
+        <div class="background">
+
+        </div>
     </div>
     <div class="containermap">
-        <div class="address">
-            <div class="hour" style="text-align: center;">
-                <b style="font-size: 30px;">Hours</b><br>
-                <b>Monday<br></b>
-                <span>9:30am - 7:00pm<br></span>
-                <b>Tuesday<br></b>
-                <span>9:30am - 7:00pm<br></span>
-                <b>Wednesday<br></b>
-                <span>9:30am - 7:00pm<br></span>
-                <b>Thursday<br></b>
-                <span>9:30am - 7:00pm<br></span>
-                <b>Friday<br></b>
-                <span>9:30am - 7:00pm<br></span>
-                <b>Saturday<br></b>
-                <span>9:30am - 7:00pm<br></span>
-                <b>Sunday<br></b>
-                <span>11:00am - 5:00pm<br></span>
-                </div>
-            <div class="location">
-                <img src="address logo.jpg" height="16px" width="16px">
-                <b>Address</b><br><a href="">223 Fresh Dr. Suite C Myrtle Beach - SC 29574</a><br>
-                <img src="phone logo.jpg" height="13px" width="13px">
-                <b>Phone Number</b><br><a href="tel:8437963091">(843) 796 - 3091</a><br>
-                <a href="https://www.instagram.com/nailsandspajk/" target="_blank"><img src="insta logo.jpg" height="100px" width="100px"></a>
-                <a href="https://www.facebook.com/people/JK-NAILS-SPA/100090812746760/?mibextid=LQQJ4d" target="_blank"><img src="facebook logo.jpg" height="100px" width="100px"></a>
-            </div>
+        <div class="title">
+            Our Location
         </div>
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.0488398286725!2d-78.85744402473301!3d33.75940377326869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89006f69f0ce427d%3A0x26aaf77a7b2a3a63!2s223%20Fresh%20Dr%2C%20Myrtle%20Beach%2C%20SC%2029579!5e0!3m2!1sen!2sus!4v1681868232490!5m2!1sen!2sus" width="100%" height="100%" style="border: 1px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+    </div>
+    <div class="bottomcontainer">
+        <br>
+        <div class="footer">ADDRESS: 223 FRESH DR. SUITE C MYRTLE BEACH - SC 29574</div>
+        <br>
+        <div class="footer"><b><a href="tel:8437963091" style="color: white; text-decoration: none;">(843) 796 - 3091</a></b> | <b><a href="mailto:jknailsandspa999@gmail.com" style="color: white; text-decoration: none;">jknailsandspa999@gmail.com</a></b></div>
+        <div class="footer">Mon - Sat: 9:30 AM - 7:00 PM</div>
+        <div class="footer">Sun: 11:00 AM - 5:00 PM</div>
+        <br>
+        <div class="socialscontainer">
+            <div><a href="https://www.instagram.com/nailsandspajk/" target="_blank" ><img src="insta logo2.jpg" style="height:50px; width:50px; border-radius:50%"></a></div>
+            <div><a href="https://www.facebook.com/people/JK-NAILS-SPA/100090812746760/?mibextid=LQQJ4d" target="_blank" ><img src="fb logo.jpg" style="height:50px; width:50px; border-radius:50%"></a></div>
+        </div>
+
     </div>
 </div>
 </body>
